@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KANBAN BOARD </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Kanban Pro</h1>
+  <button id="openModal">Add Task</button>
+</nav>
+
+<div class="board">
+
+  <div class="column" id="todo">
+    <div class="header">
+      <h2>To Do</h2>
+      <span class="count">0</span>
+    </div>
+  </div>
+
+  <div class="column" id="progress">
+    <div class="header">
+      <h2>In Progress</h2>
+      <span class="count">0</span>
+    </div>
+  </div>
+
+  <div class="column" id="done">
+    <div class="header">
+      <h2>Done</h2>
+      <span class="count">0</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal">
+  <div class="overlay"></div>
+  <div class="modal-box">
+    <input id="title" placeholder="Task Title">
+    <textarea id="desc" placeholder="Task Description"></textarea>
+    <button id="addTask">Add Task</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
